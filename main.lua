@@ -1,7 +1,8 @@
-local lovetoys = require 'libs.lovetoys.lovetoys'
-lovetoys.initialize(){
-    debug = true
-}
+local lovetoys = require ('libs.lovetoys.lovetoys')
+lovetoys.initialize({
+    globals = true,
+    debug = true --Entity, System, Engine, Component, EventManager, class global
+})
 
 function love.load()
     sprite = love.graphics.newImage('assets/sprites/ship.png')
