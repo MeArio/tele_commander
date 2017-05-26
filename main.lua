@@ -1,3 +1,8 @@
+local lovetoys = require 'libs.lovetoys.lovetoys'
+lovetoys.initialize(){
+    debug = true
+}
+
 function love.load()
     sprite = love.graphics.newImage('assets/sprites/ship.png')
 end
